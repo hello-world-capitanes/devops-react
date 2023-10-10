@@ -8,7 +8,7 @@
 .d-flex {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center
 }
 
 .primaryButton {
@@ -32,6 +32,9 @@
   border-radius: 0.3rem;
   padding: 1rem;
   transition: all 0.5s ease-in-out;
+  display: "flex";
+  flex-direction: row;
+  
 }
 
 .listElement:hover {
