@@ -22,7 +22,7 @@ export const Select =({data, listaDatos, setListaDatos})=>{
 
     return (
         <>
-            <label htmlFor="selection">Seleccionar </label>
+            <label htmlFor="selection">Seleccionar Provincia: </label>
             <span className="input" id="selection" onClick={toWrapSelect}>{listaDatos.Provincia}</span>
             <ul style={{overflowY: "scroll", height: "100px", width: "200px",border: "1px solid black", visibility: wrapSelect ? "visible": "hidden"}}>
                 {data.map((e, i)=>{
