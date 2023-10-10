@@ -30,6 +30,7 @@ function Lista ({listaDatos, setListaDatos, handleModalShow}){
     
     return (
     <div className="listContainer d-flex">
+        <h2>Users List</h2>
         <ul>
         {listaDatos.map((item, index) => (
             <li className="listElement" key={item.id} onDoubleClick={() => handleModalShow(true, item.id)}>
