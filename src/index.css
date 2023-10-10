@@ -63,6 +63,17 @@
   flex-direction: column;
   margin: 2rem 0;
   padding: 0.5rem;
+  border-radius: 0.3rem;
+  background-color: rgba(211, 211, 255, 0.615);
+}
+
+.listContainer h2 {
+  width: 40%;
+  margin: 0.5rem 0;
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid rgb(4, 4, 58);
 }
 
 .modalInfo {
