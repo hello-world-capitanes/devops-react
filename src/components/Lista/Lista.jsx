@@ -30,6 +30,8 @@ function Lista ({listaDatos, setListaDatos, handleModalShow}){
     
     return (
     <div className="listContainer d-flex">
+        <h2>Users List</h2>
+        <ul>
         <ul >
         {listaDatos.map((item, index) => (
             <li style={{display: "flex"}} className="listElement" key={item.id} onDoubleClick={() => handleModalShow(true, item.id)}>
@@ -41,17 +43,20 @@ function Lista ({listaDatos, setListaDatos, handleModalShow}){
                 <div className="d-flex buttonContainer">
                     <button 
                         className="buttons red" 
+                        title="Eliminar elemento"
                         onClick={() => borrarElemento(item.Nombre)}>
                             <BsFillTrashFill className="buttonIcon"/>
                     </button>
                     <button 
                         className="buttons blue"
+                        title="Subir en la lista"
                         disabled={(0===index) ? true : false} 
                         onClick={() => subir(index)}>
                             <BsFillArrowUpCircleFill className="buttonIcon"/>
                     </button>
                     <button 
                         className="buttons green" 
+                        title="Bajar en la lista"
                         disabled={(listaDatos.length-1===index) ? true : false} 
                         onClick={() => bajar(index)}>
                             <BsFillArrowDownCircleFill className="buttonIcon"/>

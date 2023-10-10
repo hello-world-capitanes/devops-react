@@ -7,8 +7,6 @@ import { Select } from './components/SelectorComponent'
 
 import Lista from './components/Lista/Lista'
 
-
-
 function App() {
 
 
