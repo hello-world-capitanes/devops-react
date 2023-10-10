@@ -30,10 +30,14 @@ function Lista ({listaDatos, setListaDatos, handleModalShow}){
     
     return (
     <div className="listContainer d-flex">
-        <ul>
+        <ul >
         {listaDatos.map((item, index) => (
-            <li className="listElement" key={item.id} onDoubleClick={() => handleModalShow(true, item.id)}>
-                <strong>Nombre:</strong> {item.Nombre}, <strong>Acepta:</strong> {item.Acepta ? 'Sí' : 'No'}, <strong>Provincia:</strong> {item.Provincia}
+            <li style={{display: "flex"}} className="listElement" key={item.id} onDoubleClick={() => handleModalShow(true, item.id)}>
+                <div style={{display: "flex", justifyContent: "center", alignItems: "center", justifyItems: "center"}}>
+                    <strong>Nombre:</strong> {item.Nombre}, 
+                    <strong>Acepta:</strong> {item.Acepta ? 'Sí' : 'No'}, 
+                    <strong>Provincia:</strong> {item.Provincia}
+                </div>
                 <div className="d-flex buttonContainer">
                     <button 
                         className="buttons red" 
