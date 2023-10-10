@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "Nombre": "Objeto 1",
+        "Acepta": true,
+        "Provincia": "Madrid"
+    },
+    {
+        "id": 2,
+        "Nombre": "Objeto 2",
+        "Acepta": false,
+        "Provincia": "Barcelona"
+    },
+    {
+        "id": 3,
+        "Nombre": "Objeto 3",
+        "Acepta": true,
+        "Provincia": "Valencia"
+    }
+]
