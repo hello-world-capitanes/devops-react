@@ -1,3 +1,4 @@
+
 * {
   padding: 0;
   margin: 0;
@@ -5,6 +6,26 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.bnt_theme{
+  position: absolute;
+  top: 50px;
+  right: 50px;
+
+}
+
+.day{
+  color:black;
+  background-color: whitesmoke;
+  height: 100%;
+  width: 100%;
+}
+
+.night{
+  color:white;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+}
 .d-flex {
   display: flex;
   justify-content: center;
