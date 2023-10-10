@@ -37,17 +37,20 @@ function Lista ({listaDatos, setListaDatos, handleModalShow}){
                 <div className="d-flex buttonContainer">
                     <button 
                         className="buttons red" 
+                        title="Eliminar elemento"
                         onClick={() => borrarElemento(item.Nombre)}>
                             <BsFillTrashFill className="buttonIcon"/>
                     </button>
                     <button 
                         className="buttons blue"
+                        title="Subir en la lista"
                         disabled={(0===index) ? true : false} 
                         onClick={() => subir(index)}>
                             <BsFillArrowUpCircleFill className="buttonIcon"/>
                     </button>
                     <button 
                         className="buttons green" 
+                        title="Bajar en la lista"
                         disabled={(listaDatos.length-1===index) ? true : false} 
                         onClick={() => bajar(index)}>
                             <BsFillArrowDownCircleFill className="buttonIcon"/>
