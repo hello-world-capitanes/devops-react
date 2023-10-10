@@ -37,6 +37,7 @@ function Lista ({listaDatos, setListaDatos, handleModalShow}){
                 <div className="d-flex buttonContainer">
                     <button 
                         className="buttons red" 
+                        title="Eliminar elemento"
                         onClick={() => borrarElemento(item.Nombre)}>
                             <BsFillTrashFill className="buttonIcon"/>
                     </button>
